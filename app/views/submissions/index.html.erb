@@ -1,0 +1,44 @@
+<div class="Polaris-Page Polaris-Page--fullWidth">
+  <div class="Polaris-Page__Content">
+    <div class="Polaris-Layout">
+      <div class="Polaris-Layout__Section">
+
+        <div class="Polaris-Page-Header__TitleWrapper">
+          <h1 class='Polaris-Heading Polaris-Header-Title'>
+            Submissions (<%= @submissions.count %>)
+          </h1>
+        </div>
+
+        <div class="mb-4"></div>
+
+        <div class="Polaris-Card">
+          <div class="Polaris-ResourceList__ResourceListWrapper">
+            <ul class="Polaris-ResourceList">
+
+              <% @submissions.each do |submission| %>
+                <div class="Polaris-ResourceItem__ItemWrapper">
+                  <div class="Polaris-ResourceItem">
+                      <div class="Polaris-ResourceItem__Container">
+                        <div class="Polaris-ResourceItem__Content">
+                          <h3>
+                            <span class="Polaris-TextStyle--variationStrong">
+                              <%= submission.name %>
+                            </span>
+                            <span>
+                              payload: <%= submission.payload %>
+                            </span>
+                          </h3>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+             <% end %>
+
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

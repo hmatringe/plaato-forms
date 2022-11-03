@@ -26,7 +26,8 @@ ActiveRecord::Schema.define(version: 2022_11_03_123510) do
 
   create_table "submissions", force: :cascade do |t|
     t.jsonb "payload", default: {}, null: false
-    t.integer "kind", default: 0, null: false
+    t.integer "kind"
+    t.integer "state", default: 0, null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
