@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_11_03_123510) do
+ActiveRecord::Schema.define(version: 2022_11_09_080807) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,6 +30,25 @@ ActiveRecord::Schema.define(version: 2022_11_03_123510) do
     t.integer "state", default: 0, null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "roi_number_of_fermenters"
+    t.string "roi_weekly_manual_sampling_per_fermenter"
+    t.string "roi_per_samples_liquid_tapped_volume"
+    t.string "roi_salary_per_hour"
+    t.string "roi_minutes_per_sample"
+    t.string "roi_average_revenue_per_liquid_unit"
+    t.string "roi_money_spent_on_manual_sampling"
+    t.string "roi_manual_sampling_time_lost"
+    t.string "roi_manual_sampling_liquid_lost"
+    t.string "roi_total_capacity"
+    t.string "roi_batches_count_per_year_per_fermenter"
+    t.string "roi_normal_fermentation_cycle_length"
+    t.string "roi_hours_saved_per_batch"
+    t.string "roi_revenue_per_liquid_unit"
+    t.string "roi_production_increase_percent"
+    t.string "roi_production_increase_sales"
+    t.string "roi_currency"
+    t.string "roi_liquid_unit"
+    t.string "email"
   end
 
 end

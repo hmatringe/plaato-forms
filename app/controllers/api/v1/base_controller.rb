@@ -3,7 +3,6 @@
 module Api
   module V1
     class BaseController < ActionController::API
-      before_action :verify_api_authorized
       rescue_from ActiveRecord::RecordNotFound, with: :not_found
 
       private

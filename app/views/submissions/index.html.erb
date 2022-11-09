@@ -24,9 +24,11 @@
                             <span class="Polaris-TextStyle--variationStrong">
                               <%= submission.name %>
                             </span>
-                            <span>
-                              payload: <%= submission.payload %>
-                            </span>
+                            <% submission.attributes.each do |k, v| %>
+                              <div>
+                                <%= "#{k}: #{v}" %>
+                              </div>
+                            <% end %>
                           </h3>
                         </div>
                       </div>

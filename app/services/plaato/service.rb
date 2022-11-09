@@ -3,7 +3,7 @@
 module Plaato
   class Service
     def self.call(**args)
-      ShopifyApiClient.invoke_shopify_api { new(args).call }
+      new(**args).call
     end
 
     def initialize(**args)

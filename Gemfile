@@ -35,6 +35,8 @@ gem 'net-smtp', require: false
 gem 'net-imap', require: false
 gem 'net-pop', require: false
 gem 'view_component'
+gem 'hash_to_struct'
+gem 'rack-cors'
 
 group :development, :test do
   gem 'better_errors'
