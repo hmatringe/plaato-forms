@@ -27,6 +27,7 @@ class Submission < ApplicationRecord
       roi_manual_sampling_time_lost
       roi_manual_sampling_liquid_lost
       roi_total_capacity
+      roi_total_capacity_unit
       roi_batches_count_per_year_per_fermenter
       roi_normal_fermentation_cycle_length
       roi_hours_saved_per_batch

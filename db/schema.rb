@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_11_09_080807) do
+ActiveRecord::Schema.define(version: 2022_11_10_131128) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(version: 2022_11_09_080807) do
     t.string "roi_currency"
     t.string "roi_liquid_unit"
     t.string "email"
+    t.string "roi_total_capacity_unit"
   end
 
 end
