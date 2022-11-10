@@ -27,6 +27,7 @@ module PlaatoForms
     # config.eager_load_paths << Rails.root.join("extras")
 
     config.hosts << ENV['SHOPIFY_DOMAIN']
+    config.hosts << ENV['HOST_DOMAIN']
 
     config.middleware.insert_before 0, Rack::Cors do
       allow do
