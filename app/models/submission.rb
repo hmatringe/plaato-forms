@@ -12,7 +12,7 @@ class Submission < ApplicationRecord
   }
 
   def name
-    "#{created_at} - #{state} - #{kind.camelize}"
+    "#{id} - #{created_at} - #{state} - #{kind.camelize}"
   end
 
   def properties
