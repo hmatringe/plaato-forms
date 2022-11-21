@@ -24,11 +24,13 @@
                             <span class="Polaris-TextStyle--variationStrong">
                               <%= submission.name %>
                             </span>
-                            <%# submission.attributes.each do |k, v| %>
-                              <!-- <div> -->
-                                <%#= "#{k}: #{v}" %>
-                              <!-- </div> -->
-                            <%# end %>
+                            <% if params[:debug] %>
+                              <% submission.attributes.each do |k, v| %>
+                                <div>
+                                  <%= "#{k}: #{v}" %>
+                                </div>
+                              <% end %>
+                            <% end %>
                           </h3>
                         </div>
                       </div>
